@@ -8,7 +8,7 @@ export const fetchData = async(country) => {
     changeableUrl= `${url}/countries/${country}`
   }
   try{
-    const {data: {confirmed, recovered, deaths, lastUpdate}} = await axios.get (changeableUrl) //data destructuring "response.data"
+    const {data: {confirmed, recovered, deaths, lastUpdate}} = await axios.get(changeableUrl) //data destructuring "response.data"
 
     // const modifiedData ={
     //   confirmed: data.confirmed,
